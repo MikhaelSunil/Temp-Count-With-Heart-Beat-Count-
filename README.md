@@ -7,3 +7,5 @@ Heartbeat Task: The heartbeat task toggles a red LED every 500 milliseconds. The
 Temperature Readout Task: A second task waits for the semaphore. When received, the task reads the internal temperature sensor of the MCU, processes the ADC value, converts it to a temperature, and sends the result through a UART for display.
 
 Synchronization: The two tasks are synchronized using a semaphore, ensuring that the temperature sensor readout is triggered only when the heartbeat task detects the condition (every 3rd LED toggle).
+
+Note:the cmsis library hasnt been used entirely but the sublibs inside have been included
