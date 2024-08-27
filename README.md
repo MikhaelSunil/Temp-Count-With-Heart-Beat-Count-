@@ -8,4 +8,4 @@ Temperature Readout Task: A second task waits for the semaphore. When received, 
 
 Synchronization: The two tasks are synchronized using a semaphore, ensuring that the temperature sensor readout is triggered only when the heartbeat task detects the condition (every 3rd LED toggle).
 
-Note:the cmsis library hasnt been used entirely but the sublibs inside have been included
+Note:the cmsis library hasnt been used entirely but the sublibs inside have been included.
